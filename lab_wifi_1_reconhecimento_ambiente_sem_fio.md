@@ -39,6 +39,10 @@ Neste primeiro laboratório, o estudante aprenderá a:
 
 Este laboratório é a base para os próximos experimentos sobre associação, segurança, hardening e troubleshooting em WLANs.
 
+<img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 19_05_56" src="https://github.com/user-attachments/assets/4982fddc-c39f-4be6-9af4-5a55acc59f73" />
+
+
+
 ---
 
 ## Situação-problema
@@ -445,15 +449,3 @@ sudo systemctl restart NetworkManager
 > Ajuste o nome da interface se necessário.
 
 ---
-
-## Continuidade sugerida
-
-O próximo experimento da sequência é o:
-
-**Lab WiFi 2 - Associação, autenticação e observação controlada do acesso à rede sem fio**
-
-Esse laboratório aprofundará:
-- associação de cliente;
-- autenticação;
-- leitura de eventos de conexão;
-- diferenciação entre tráfego de gerenciamento e acesso à WLAN.
