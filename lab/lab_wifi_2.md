@@ -90,9 +90,9 @@ flowchart LR
     LAN["Infraestrutura local<br/>switch / roteador / internet"]
 
     AP --- LAN
-    STA -. autenticação / associação .- AP
-    MON -. captura passiva 802.11 .- AP
-    MON -. observação dos eventos .- STA
+    STA -->|autenticação e associação| AP
+    MON -->|captura passiva 802.11| AP
+    MON -->|observação dos eventos| STA
 
     classDef ap fill:#dbeafe,stroke:#1d4ed8,color:#111827,stroke-width:1.5px;
     classDef mon fill:#fef3c7,stroke:#d97706,color:#111827,stroke-width:1.5px;
@@ -493,3 +493,11 @@ sudo systemctl restart NetworkManager
 > Ajuste o nome da interface, se necessário.
 
 ---
+
+## Continuidade sugerida
+
+O próximo experimento da sequência é o:
+
+**Lab WiFi 3 - Hardening e configuração segura de uma WLAN**
+
+Nele, o foco passará da observação para a **proteção da rede sem fio**, com análise de boas práticas de configuração, escolha de mecanismos de segurança e redução de superfície de exposição.
