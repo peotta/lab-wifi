@@ -1,4 +1,4 @@
-### **Lab WiFi 1 — Reconhecimento do ambiente sem fio**
+### **Lab WiFi 1 - Reconhecimento do ambiente sem fio**
 
 **Foco:** entender a rede Wi-Fi “no ar”.
 
@@ -27,7 +27,7 @@
 
 ---
 
-### **Lab WiFi 2 — Associação, autenticação e captura de handshake**
+### **Lab WiFi 2 - Associação, autenticação e captura de handshake**
 
 **Foco:** funcionamento do acesso Wi-Fi protegido.
 
@@ -56,7 +56,7 @@
 
 ---
 
-### **Lab WiFi 3 — Hardening e configuração segura de uma WLAN**
+### **Lab WiFi 3 - Hardening e configuração segura de uma WLAN**
 
 **Foco:** defesa e boas práticas.
 
@@ -89,7 +89,7 @@
 
 ---
 
-### **Lab WiFi 4 — Troubleshooting e análise de segurança Wi-Fi**
+### **Lab WiFi 4 - Troubleshooting e análise de segurança Wi-Fi**
 
 **Foco:** diagnóstico e investigação.
 
