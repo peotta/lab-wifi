@@ -22,7 +22,7 @@ Este laboratório deve ser conduzido **exclusivamente em ambiente autorizado da 
 
 ---
 
-## Introdução teórica
+## Introdução 
 
 Em redes IEEE 802.11, o acesso de uma estação cliente a uma WLAN não ocorre de forma instantânea. Antes da troca efetiva de dados, há um conjunto de etapas lógicas e operacionais que permitem ao dispositivo descobrir a rede, selecionar um ponto de acesso, autenticar-se, associar-se e estabelecer os parâmetros necessários para comunicação protegida.
 
@@ -32,7 +32,13 @@ Quando a rede utiliza **WPA2-Personal** ou mecanismo equivalente, o ingresso do 
 
 Do ponto de vista de segurança e operação, observar esse processo é importante por pelo menos quatro razões. Primeiro, permite compreender como o acesso legítimo ocorre em uma WLAN moderna. Segundo, ajuda a distinguir problemas de autenticação, associação e conectividade IP. Terceiro, oferece base conceitual para troubleshooting em redes sem fio. Quarto, introduz o estudante à análise operacional de eventos 802.11 a partir de evidências em captura.
 
+<img width="1448" height="1086" alt="ChatGPT Image 5 de jun  de 2026, 20_57_14" src="https://github.com/user-attachments/assets/32d7c2e8-321d-4aa9-8294-574e0a127e2e" />
+
+
 Neste laboratório, a proposta é **visualizar e interpretar** esse processo em um ambiente controlado, focando a captura e a leitura dos eventos, sem exploração ofensiva e sem uso indevido fora do contexto acadêmico autorizado.
+
+
+
 
 ---
 
@@ -109,29 +115,16 @@ flowchart LR
 
 ## Conceitos essenciais
 
-### Estação (STA)
-Dispositivo cliente que tenta entrar na rede Wi-Fi.
-
-### AP (Access Point)
-Equipamento que anuncia a rede e coordena o acesso sem fio.
-
-### Autenticação
-Etapa inicial de validação entre cliente e AP, antes da associação completa.
-
-### Associação
-Processo pelo qual a estação passa a integrar logicamente a WLAN.
-
-### EAPOL
-Conjunto de quadros usado na troca relacionada ao processo de autenticação/chaves em redes protegidas.
-
-### 4-way handshake
-Sequência de quatro mensagens usada para derivar e confirmar chaves de sessão em redes WPA2/WPA3-Personal.
-
-### Beacon
-Quadro periódico de gerenciamento enviado pelo AP para anunciar a rede.
-
-### Probe
-Quadro usado para descoberta ativa de redes Wi-Fi.
+| Conceito | Descrição |
+|---|---|
+| **Estação (STA)** | Dispositivo cliente que tenta entrar na rede Wi-Fi. |
+| **AP (Access Point)** | Equipamento que anuncia a rede e coordena o acesso sem fio. |
+| **Autenticação** | Etapa inicial de validação entre cliente e AP, antes da associação completa. |
+| **Associação** | Processo pelo qual a estação passa a integrar logicamente a WLAN. |
+| **EAPOL** | Conjunto de quadros usado na troca relacionada ao processo de autenticação/chaves em redes protegidas. |
+| **4-way handshake** | Sequência de quatro mensagens usada para derivar e confirmar chaves de sessão em redes WPA2/WPA3-Personal. |
+| **Beacon** | Quadro periódico de gerenciamento enviado pelo AP para anunciar a rede. |
+| **Probe** | Quadro usado para descoberta ativa de redes Wi-Fi. |
 
 ---
 
