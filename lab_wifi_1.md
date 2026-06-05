@@ -39,8 +39,6 @@ Neste primeiro laboratório, o estudante aprenderá a:
 
 Este laboratório é a base para os próximos experimentos sobre associação, segurança, hardening e troubleshooting em WLANs.
 
-<img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 19_05_56" src="https://github.com/user-attachments/assets/4982fddc-c39f-4be6-9af4-5a55acc59f73" />
-
 ## Fundamentos
 
 As redes locais sem fio, usualmente denominadas **WLANs (Wireless Local Area Networks)**, são baseadas principalmente na família de padrões **IEEE 802.11**, que define mecanismos de acesso ao meio, estrutura de quadros, descoberta de redes, autenticação, associação e transmissão de dados em ambiente compartilhado. Em contraste com redes cabeadas tradicionais, nas quais o meio físico é mais estável e previsível, o ambiente sem fio apresenta maior variabilidade operacional em razão de fatores como interferência eletromagnética, atenuação por obstáculos, mobilidade dos dispositivos, sobreposição de canais e competição simultânea pelo espectro.
