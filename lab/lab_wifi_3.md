@@ -29,7 +29,7 @@ Entre os principais elementos de proteção de uma WLAN estão o **mecanismo de 
 
 Do ponto de vista operacional, o hardening de uma WLAN também inclui decisões aparentemente simples, mas tecnicamente relevantes: nomeação adequada de SSID, uso de senhas robustas, atualização de firmware, troca de credenciais administrativas padrão, seleção criteriosa de canais e observação da potência e cobertura do sinal. Tais medidas reduzem fragilidades comuns, dificultam abuso de configuração e ajudam a organizar a rede de forma mais previsível e auditável.
 
-<img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 21_22_22" src="https://github.com/user-attachments/assets/1a4b8152-ab18-4718-bb3b-76b75c516a5c" />
+<img width="1672" height="941" alt="ChatGPT Image 6 de jun  de 2026, 06_43_22" src="https://github.com/user-attachments/assets/aa18d344-f508-44ce-8e52-7f8d13c32a56" />
 
 
 
