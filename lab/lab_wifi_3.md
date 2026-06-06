@@ -58,7 +58,7 @@ A equipe deve responder a perguntas como:
 - Comparar mecanismos de proteção em WLANs.
 - Identificar configurações inseguras em pontos de acesso.
 - Aplicar boas práticas de configuração em ambiente controlado.
-- Validar tecnicamente uma WLAN endurecida.
+- Validar tecnicamente uma WLAN segura.
 
 ---
 
@@ -128,7 +128,7 @@ flowchart LR
 
 ## Critérios de segurança a considerar
 
-A WLAN endurecida deve considerar, sempre que o equipamento permitir:
+A WLAN segura deve considerar, sempre que o equipamento permitir:
 
 - uso de WPA2-AES ou WPA3;
 - desativação de WPS;
@@ -441,7 +441,7 @@ Marque os itens concluídos.
 
 ---
 
-## Comparação: configuração insegura x configuração endurecida
+## Comparação: configuração insegura x configuração segura
 
 | Item | Configuração fraca | Configuração recomendada |
 | --- | --- | --- |
