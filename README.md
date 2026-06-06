@@ -1,3 +1,9 @@
+
+<img width="2752" height="1506" alt="unnamed (1)2" src="https://github.com/user-attachments/assets/26b6a551-bc67-4d2d-bd23-a221a54aeb0a" />
+
+
+
+
 ### **Lab WiFi 1 - Reconhecimento do ambiente sem fio**
 
 **Foco:** entender a rede Wi-Fi “no ar”.
