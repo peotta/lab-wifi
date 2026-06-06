@@ -21,13 +21,17 @@ Aplicar medidas de **hardening** em uma WLAN de laboratório, comparando uma con
 
 ---
 
-## Introdução teórica
+## Introdução 
 
 O processo de proteção de uma rede Wi-Fi não depende de um único mecanismo, mas de um conjunto de decisões de configuração que afetam a confidencialidade, a integridade, a disponibilidade e a controlabilidade do acesso sem fio. Em uma WLAN, a superfície de exposição é ampliada pelo próprio meio físico de transmissão, já que o sinal se propaga pelo ambiente e pode ser captado além dos limites estritos do espaço organizacional. Por essa razão, a configuração segura de uma rede sem fio deve ser tratada como atividade essencial de administração e não como ajuste opcional.
 
 Entre os principais elementos de proteção de uma WLAN estão o **mecanismo de autenticação**, o **protocolo de criptografia**, a **gestão de credenciais**, a **segmentação lógica da rede**, a **administração segura do ponto de acesso** e a **desativação de funcionalidades desnecessárias ou arriscadas**. Em contextos modernos, a adoção de **WPA2-AES** ou, preferencialmente, **WPA3**, representa uma prática recomendada, enquanto mecanismos legados e funcionalidades como **WEP**, **TKIP** e **WPS** devem ser evitados ou removidos quando presentes.
 
 Do ponto de vista operacional, o hardening de uma WLAN também inclui decisões aparentemente simples, mas tecnicamente relevantes: nomeação adequada de SSID, uso de senhas robustas, atualização de firmware, troca de credenciais administrativas padrão, seleção criteriosa de canais e observação da potência e cobertura do sinal. Tais medidas reduzem fragilidades comuns, dificultam abuso de configuração e ajudam a organizar a rede de forma mais previsível e auditável.
+
+<img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 21_22_22" src="https://github.com/user-attachments/assets/1a4b8152-ab18-4718-bb3b-76b75c516a5c" />
+
+
 
 Neste laboratório, o estudante atuará sobre uma WLAN de teste previamente disponibilizada pela disciplina, aplicando um conjunto de boas práticas de segurança. O foco não é explorar vulnerabilidades, mas sim **entender como configurar uma WLAN de forma mais segura**, justificando tecnicamente cada decisão adotada.
 
