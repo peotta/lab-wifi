@@ -1,4 +1,6 @@
 
+# **Laboratórios de Redes Wi-Fi: Descoberta, Acesso, Hardening e Troubleshooting**
+
 <img width="2752" height="1506" alt="unnamed (1)2" src="https://github.com/user-attachments/assets/26b6a551-bc67-4d2d-bd23-a221a54aeb0a" />
 
 
@@ -135,13 +137,12 @@
 
 ---
 
-## Progressão didática
+## Progressão 
 
 1. **Enxergar a rede**
 2. **Entender como o cliente entra**
 3. **Configurar com segurança**
 4. **Diagnosticar e investigar**
 
-## Sugestão de título da sequência
 
-**Laboratórios de Redes Wi-Fi: Descoberta, Acesso, Hardening e Troubleshooting**
+
