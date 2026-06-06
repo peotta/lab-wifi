@@ -45,16 +45,16 @@ As redes locais sem fio, usualmente denominadas **WLANs (Wireless Local Area Net
 
 Alguns conceitos são centrais nesse processo. O **SSID (Service Set Identifier)** representa o identificador lógico da rede anunciado ao usuário. O **BSSID (Basic Service Set Identifier)**, por sua vez, geralmente corresponde ao endereço MAC da interface de rádio do AP responsável pelo anúncio daquele conjunto básico de serviço. O **canal** indica a posição operacional no espectro, enquanto a **banda** diferencia faixas como **2,4 GHz**, **5 GHz** e **6 GHz**, com implicações diretas em cobertura, interferência e capacidade. A **intensidade do sinal**, embora não esgote a análise de qualidade, oferece um indicador inicial importante para inferir viabilidade de recepção e estabilidade de enlace no ponto de observação.
 
-<img width="1536" height="1024" alt="ChatGPT Image 5 de jun  de 2026, 21_23_18" src="https://github.com/user-attachments/assets/e0081a06-d718-49c8-9d90-98f9913e6ba8" />
+<br><img width="1536" height="1024" alt="ChatGPT Image 5 de jun  de 2026, 21_23_18" src="https://github.com/user-attachments/assets/e0081a06-d718-49c8-9d90-98f9913e6ba8" /><br>
 
 
 Sob a perspectiva arquitetural, uma WLAN é composta por **pontos de acesso (Access Points - APs)** e **estações clientes (stations)**. O AP atua como elemento central de coordenação do acesso ao meio em modo infraestrutura, anunciando periodicamente a rede por meio de **quadros beacon**, que carregam informações essenciais como **SSID**, capacidades suportadas, parâmetros temporais, canal de operação e elementos relacionados à segurança. Esses anúncios permitem que as estações detectem a existência da rede e decidam se iniciarão os processos subsequentes de autenticação e associação. Desse modo, mesmo antes da troca de dados de aplicação, o plano de gerenciamento da WLAN já expõe uma quantidade relevante de informação operacional.
 
 Do ponto de vista da segurança, essa característica torna a etapa de **reconhecimento** particularmente importante. A observação dos quadros de gerenciamento permite identificar redes abertas ou protegidas, estimar densidade de APs, verificar canais mais utilizados, detectar múltiplos BSSIDs associados a um mesmo SSID e levantar indícios sobre a postura de segurança do ambiente. Em atividades de defesa, auditoria e troubleshooting, esse reconhecimento inicial é fundamental para apoiar decisões de hardening, segmentação, redistribuição de canais, melhoria de cobertura e investigação de comportamentos anômalos. Em outras palavras, não é possível proteger adequadamente aquilo que ainda não foi corretamente observado e caracterizado.
 
-Neste laboratório, a análise será realizada por meio de **reconhecimento passivo**, abordagem que privilegia a escuta e a interpretação dos quadros 802.11 sem associação indevida, sem injeção de tráfego e sem interferência proposital sobre o ambiente. Tal escolha possui justificativa técnica e ética: em contexto acadêmico, a etapa inicial deve enfatizar compreensão do funcionamento da WLAN, coleta de evidências e construção de diagnóstico, preservando a integridade operacional do ambiente observado. Assim, o laboratório introduz o estudante a uma prática essencial em segurança de redes sem fio: a capacidade de identificar, descrever e interpretar a superfície observável de uma WLAN antes de qualquer atividade de configuração, endurecimento ou resposta a incidentes.
+Neste laboratório, a análise será realizada por meio de **reconhecimento passivo**, abordagem que privilegia a escuta e a interpretação dos quadros 802.11 sem associação indevida, sem injeção de tráfego e sem interferência proposital sobre o ambiente. Tal escolha possui justificativa técnica e ética: em contexto acadêmico, a etapa inicial deve enfatizar compreensão do funcionamento da WLAN, coleta de evidências e construção de diagnóstico, preservando a integridade operacional do ambiente observado. Assim, o laboratório introduz o estudante a uma prática essencial em segurança de redes sem fio: a capacidade de identificar, descrever e interpretar a superfície observável de uma WLAN antes de qualquer atividade de configuração, endurecimento ou resposta a incidentes.  
 
-<img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 19_15_56" src="https://github.com/user-attachments/assets/6adb137a-3b06-440c-8aef-df6963c6b987" />
+<br><img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 19_15_56" src="https://github.com/user-attachments/assets/6adb137a-3b06-440c-8aef-df6963c6b987" />  <br>
 
 
 ---
@@ -132,25 +132,17 @@ flowchart LR
 
 ---
 
-## Conceitos essenciais
+## Conceitos Essenciais de Redes Wi-Fi
 
-### SSID
-Nome lógico da rede Wi-Fi exibido aos usuários.
+| Conceito | Descrição |
+|-----------|-----------|
+| **SSID (Service Set Identifier)** | Nome lógico da rede Wi-Fi exibido aos usuários. |
+| **BSSID (Basic Service Set Identifier)** | Endereço MAC do ponto de acesso (AP) que anuncia a rede. |
+| **Canal** | Faixa operacional em que o ponto de acesso transmite os sinais Wi-Fi. |
+| **Banda** | Faixa de frequência utilizada pela rede, normalmente **2,4 GHz**, **5 GHz** ou **6 GHz**. |
+| **Beacon** | Quadro de gerenciamento transmitido periodicamente pelo AP para anunciar a existência e as características da rede. |
+| **Modo Monitor** | Modo em que a interface Wi-Fi captura e observa quadros IEEE 802.11 sem precisar estar associada a uma rede. |
 
-### BSSID
-Endereço MAC do ponto de acesso que anuncia a rede.
-
-### Canal
-Faixa operacional em que o AP transmite.
-
-### Banda
-Faixa de frequência usada pela rede, normalmente 2,4 GHz ou 5 GHz.
-
-### Beacon
-Quadro de gerenciamento transmitido periodicamente pelo AP para anunciar a existência da rede.
-
-### Modo monitor
-Modo em que a interface Wi-Fi observa quadros 802.11 sem necessariamente associar-se a uma rede.
 
 ---
 
