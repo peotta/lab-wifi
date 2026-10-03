@@ -1,8 +1,10 @@
 # Lab WiFi 3 - Hardening e Configuração Segura de uma WLAN
 
-**Disciplina:** ENE0025 - Protocolos de Transporte e Roteamento  
-**Curso:** Engenharia de Redes de Comunicação  
+**Laboratório:** Lab-Wifi (Redes Sem Fio IEEE 802.11)  
+**Curso:** Engenharia de Redes de Comunicação / Engenharia Elétrica  
 **Professor responsável:** Prof. Dr. Laerte Peotta de Melo  
+**Instituição:** Universidade de Brasília (UnB)  
+**Repositório Oficial:** [peotta/lab-wifi](https://github.com/peotta/lab-wifi)  
 **Ambiente:** Laboratório presencial com notebook Linux, AP de laboratório e cliente de teste  
 **Tema:** Endurecimento de segurança e boas práticas de configuração de redes Wi-Fi
 
@@ -29,7 +31,7 @@ Entre os principais elementos de proteção de uma WLAN estão o **mecanismo de 
 
 Do ponto de vista operacional, o hardening de uma WLAN também inclui decisões aparentemente simples, mas tecnicamente relevantes: nomeação adequada de SSID, uso de senhas robustas, atualização de firmware, troca de credenciais administrativas padrão, seleção criteriosa de canais e observação da potência e cobertura do sinal. Tais medidas reduzem fragilidades comuns, dificultam abuso de configuração e ajudam a organizar a rede de forma mais previsível e auditável.
 
-<img width="1672" height="941" alt="ChatGPT Image 6 de jun  de 2026, 06_43_22" src="https://github.com/user-attachments/assets/aa18d344-f508-44ce-8e52-7f8d13c32a56" />
+<img width="1672" height="941" alt="Esquema conceitual de hardening e boas práticas defensivas em WLAN" src="https://github.com/user-attachments/assets/aa18d344-f508-44ce-8e52-7f8d13c32a56" />
 
 
 
@@ -84,11 +86,11 @@ A equipe deve responder a perguntas como:
 
 ```mermaid
 flowchart LR
-    ADM["Notebook de administraçãoconfiguração do AP"]
-    AP["Ponto de Acesso Wi-FiWLAN de laboratório"]
-    STA["Cliente de testenotebook / smartphone"]
+    ADM["Notebook de Administração<br/>Configuração do AP"]
+    AP["Ponto de Acesso Wi-Fi<br/>WLAN de laboratório"]
+    STA["Cliente de Teste<br/>Notebook / smartphone"]
     LAN["Rede local / Internet"]
-    MON["Notebook de validaçãoobservação da WLAN"]
+    MON["Notebook de Validação<br/>Observação da WLAN"]
 
     ADM -->|configuração segura| AP
     STA -->|associação e teste| AP
@@ -511,7 +513,29 @@ Cada aluno ou dupla deve entregar:
 
 Ao final do laboratório, o estudante deve ser capaz de concluir algo como:
 
-> A WLAN do laboratório foi fortalecido por meio da adoção de mecanismo de segurança adequado, troca de credenciais frágeis, desativação de recursos inseguros e revisão de parâmetros operacionais. A atividade mostrou que a segurança Wi-Fi depende de múltiplas decisões coordenadas e que a configuração segura do AP é parte essencial da administração de redes sem fio.
+> A WLAN do laboratório foi fortalecida por meio da adoção de mecanismo de segurança adequado, troca de credenciais frágeis, desativação de recursos inseguros e revisão de parâmetros operacionais. A atividade mostrou que a segurança Wi-Fi depende de múltiplas decisões coordenadas e que a configuração segura do AP é parte essencial da administração de redes sem fio.
 
 ---
+
+## Restauração e encerramento do ambiente
+
+Ao final da atividade:
+
+1. Se a interface de validação foi colocada em modo monitor:
+   ```bash
+   sudo airmon-ng stop wlan0mon
+   sudo systemctl restart NetworkManager
+   ```
+2. Realize backup da configuração definitiva do AP ou restaure os parâmetros determinados pelo professor para a próxima turma de teste.
+
+---
+
+## Continuidade sugerida
+
+O próximo experimento da sequência é o:
+
+**[Lab WiFi 4 - Troubleshooting e Análise de Segurança Wi-Fi](lab_wifi_4.md)**
+
+Nele, o foco passará para o **diagnóstico operacional e investigação de falhas**, abordando atenuação de sinal, interferência de canais, desconexões intermitentes e análise de eventos anômalos em WLANs.
+
 

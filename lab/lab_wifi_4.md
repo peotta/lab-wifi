@@ -1,8 +1,10 @@
 # Lab WiFi 4 - Troubleshooting e Análise de Segurança Wi-Fi
 
-**Disciplina:** ENE0025 - Protocolos de Transporte e Roteamento  
-**Curso:** Engenharia de Redes de Comunicação  
+**Laboratório:** Lab-Wifi (Redes Sem Fio IEEE 802.11)  
+**Curso:** Engenharia de Redes de Comunicação / Engenharia Elétrica  
 **Professor responsável:** Prof. Dr. Laerte Peotta de Melo  
+**Instituição:** Universidade de Brasília (UnB)  
+**Repositório Oficial:** [peotta/lab-wifi](https://github.com/peotta/lab-wifi)  
 **Ambiente:** Laboratório presencial com notebook Linux, AP de laboratório e cliente(s) de teste  
 **Tema:** Diagnóstico operacional, análise de evidências e identificação de problemas em WLANs
 
@@ -21,7 +23,7 @@ Diagnosticar problemas comuns em redes Wi-Fi de laboratório por meio de observa
 
 ---
 
-## Introdução teórica
+## Introdução
 
 A operação de uma WLAN depende de fatores que vão além da simples presença de um ponto de acesso e de uma senha correta. Em ambientes reais, o desempenho e a estabilidade de redes Wi-Fi são influenciados por variáveis de rádio, interferência, competição pelo meio, posicionamento físico, mobilidade dos clientes, configuração do AP e mecanismos de segurança. Por essa razão, o processo de troubleshooting em redes sem fio exige uma abordagem orientada por evidências, capaz de correlacionar sintomas observados pelos usuários com elementos concretos de operação do protocolo IEEE 802.11.
 
@@ -84,12 +86,12 @@ A equipe técnica precisa descobrir a causa provável e indicar medidas corretiv
 
 ```mermaid
 flowchart LR
-    AP["Ponto de AcessoWLAN de laboratório"]
-    C1["Cliente 1uso normal"]
-    C2["Cliente 2cliente de teste"]
-    MON["Notebook de análisemodo monitor / diagnóstico"]
-    LAN["Rede local / serviços"]
-    OBS["Ambiente de rádiocanais / interferência / distância"]
+    AP["Ponto de Acesso<br/>WLAN de laboratório"]
+    C1["Cliente 1<br/>Uso normal"]
+    C2["Cliente 2<br/>Cliente de teste"]
+    MON["Notebook de Análise<br/>Modo monitor / diagnóstico"]
+    LAN["Rede local / Serviços"]
+    OBS["Ambiente de Rádio<br/>Canais / interferência / distância"]
 
     C1 -->|associação| AP
     C2 -->|associação| AP
@@ -554,9 +556,10 @@ sudo systemctl restart NetworkManager
 
 Com este laboratório, a sequência de Wi-Fi cobre:
 
-- **Lab WiFi 1:** reconhecimento do ambiente sem fio;
-- **Lab WiFi 2:** associação, autenticação e handshake;
-- **Lab WiFi 3:** hardening e configuração segura;
-- **Lab WiFi 4:** troubleshooting e análise de segurança.
+- **[Lab WiFi 1 - Reconhecimento do Ambiente Sem Fio](lab_wifi_1.md)**
+- **[Lab WiFi 2 - Associação, Autenticação e Captura de Handshake](lab_wifi_2.md)**
+- **[Lab WiFi 3 - Hardening e Configuração Segura de uma WLAN](lab_wifi_3.md)**
+- **[Lab WiFi 4 - Troubleshooting e Análise de Segurança Wi-Fi](lab_wifi_4.md)**
 
 Essa progressão permite que o estudante observe, compreenda, proteja e diagnostique redes WLAN em ambiente autorizado de laboratório.
+

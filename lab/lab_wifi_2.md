@@ -1,8 +1,10 @@
 # Lab WiFi 2 - Associação, Autenticação e Captura de Handshake
 
-**Disciplina:** ENE0025 - Protocolos de Transporte e Roteamento  
-**Curso:** Engenharia de Redes de Comunicação  
+**Laboratório:** Lab-Wifi (Redes Sem Fio IEEE 802.11)  
+**Curso:** Engenharia de Redes de Comunicação / Engenharia Elétrica  
 **Professor responsável:** Prof. Dr. Laerte Peotta de Melo  
+**Instituição:** Universidade de Brasília (UnB)  
+**Repositório Oficial:** [peotta/lab-wifi](https://github.com/peotta/lab-wifi)  
 **Ambiente:** Laboratório presencial com notebook Linux e adaptador Wi-Fi compatível  
 **Tema:** Associação controlada, autenticação e observação do processo de acesso em redes IEEE 802.11
 
@@ -32,7 +34,7 @@ Quando a rede utiliza **WPA2-Personal** ou mecanismo equivalente, o ingresso do 
 
 Do ponto de vista de segurança e operação, observar esse processo é importante por pelo menos quatro razões. Primeiro, permite compreender como o acesso legítimo ocorre em uma WLAN moderna. Segundo, ajuda a distinguir problemas de autenticação, associação e conectividade IP. Terceiro, oferece base conceitual para troubleshooting em redes sem fio. Quarto, introduz o estudante à análise operacional de eventos 802.11 a partir de evidências em captura.
 
-<img width="1448" height="1086" alt="ChatGPT Image 5 de jun  de 2026, 20_57_14" src="https://github.com/user-attachments/assets/32d7c2e8-321d-4aa9-8294-574e0a127e2e" />
+<img width="1448" height="1086" alt="Fluxo estruturado de associação, autenticação e 4-Way Handshake em redes IEEE 802.11" src="https://github.com/user-attachments/assets/32d7c2e8-321d-4aa9-8294-574e0a127e2e" />
 
 
 Neste laboratório, a proposta é **visualizar e interpretar** esse processo em um ambiente controlado, focando a captura e a leitura dos eventos, sem exploração ofensiva e sem uso indevido fora do contexto acadêmico autorizado.
@@ -361,10 +363,35 @@ Preencha a tabela abaixo com base na captura.
 
 1. o AP anuncia a rede por beacon;
 2. o cliente identifica a rede;
-3. o cliente inicia autenticação;
-4. cliente e AP realizam associação;
-5. ocorre o 4-way handshake;
-6. a estação passa a trocar dados protegidos.
+3. o cliente inicia autenticação aberta (Open System Authentication);
+4. cliente e AP realizam requisição e resposta de associação;
+5. ocorre o 4-way handshake (frames EAPOL 1 a 4);
+6. a estação passa a trocar dados protegidos (frames de dados com cifra CCMP/AES).
+
+```mermaid
+sequenceDiagram
+    autonumber
+    participant STA as Cliente Wi-Fi (STA)
+    participant AP as Ponto de Acesso (AP)
+
+    Note over STA,AP: 1. Descoberta e Entrada na Rede
+    AP-->>STA: Beacon Frame (SSID, canal, RSN IE / WPA2)
+    STA->>AP: Authentication Request (Open System)
+    AP->>STA: Authentication Response (Sucesso)
+    STA->>AP: Association Request (Capacidades, RSN)
+    AP->>STA: Association Response (AID atribuído)
+
+    Note over STA,AP: 2. Troca de Chaves: 4-Way Handshake (EAPOL)
+    AP->>STA: Mensagem 1: EAPOL-Key (ANonce)
+    Note over STA: Derivação da PTK = PRF(PMK, ANonce, SNonce, MACs)
+    STA->>AP: Mensagem 2: EAPOL-Key (SNonce + MIC)
+    Note over AP: Derivação da PTK e verificação do MIC
+    AP->>STA: Mensagem 3: EAPOL-Key (Instalação da PTK + GTK criptografada + MIC)
+    STA->>AP: Mensagem 4: EAPOL-Key (Confirmação / ACK + MIC)
+
+    Note over STA,AP: 3. Transmissão de Dados Criptografados
+    STA->>AP: Data Frame (Payload cifrado via AES-CCMP)
+```
 
 ### Resultado esperado
 O aluno deve compreender que o acesso à WLAN protegida depende de um fluxo ordenado de eventos, e que problemas em qualquer etapa podem impedir a conexão.
@@ -491,6 +518,7 @@ sudo systemctl restart NetworkManager
 
 O próximo experimento da sequência é o:
 
-**Lab WiFi 3 - Hardening e configuração segura de uma WLAN**
+**[Lab WiFi 3 - Hardening e Configuração Segura de uma WLAN](lab_wifi_3.md)**
 
 Nele, o foco passará da observação para a **proteção da rede sem fio**, com análise de boas práticas de configuração, escolha de mecanismos de segurança e redução de superfície de exposição.
+

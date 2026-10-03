@@ -1,8 +1,10 @@
 # Lab WiFi 1 - Reconhecimento do Ambiente Sem Fio
 
-**Disciplina:** ENE0025 - Protocolos de Transporte e Roteamento  
-**Curso:** Engenharia de Redes de Comunicação  
+**Laboratório:** Lab-Wifi (Redes Sem Fio IEEE 802.11)  
+**Curso:** Engenharia de Redes de Comunicação / Engenharia Elétrica  
 **Professor responsável:** Prof. Dr. Laerte Peotta de Melo  
+**Instituição:** Universidade de Brasília (UnB)  
+**Repositório Oficial:** [peotta/lab-wifi](https://github.com/peotta/lab-wifi)  
 **Ambiente:** Laboratório presencial com notebook Linux e adaptador Wi-Fi compatível  
 **Tema:** Descoberta passiva e análise inicial de redes IEEE 802.11
 
@@ -45,7 +47,7 @@ As redes locais sem fio, usualmente denominadas **WLANs (Wireless Local Area Net
 
 Alguns conceitos são centrais nesse processo. O **SSID (Service Set Identifier)** representa o identificador lógico da rede anunciado ao usuário. O **BSSID (Basic Service Set Identifier)**, por sua vez, geralmente corresponde ao endereço MAC da interface de rádio do AP responsável pelo anúncio daquele conjunto básico de serviço. O **canal** indica a posição operacional no espectro, enquanto a **banda** diferencia faixas como **2,4 GHz**, **5 GHz** e **6 GHz**, com implicações diretas em cobertura, interferência e capacidade. A **intensidade do sinal**, embora não esgote a análise de qualidade, oferece um indicador inicial importante para inferir viabilidade de recepção e estabilidade de enlace no ponto de observação.
 
-<br><img width="1536" height="1024" alt="ChatGPT Image 5 de jun  de 2026, 21_23_18" src="https://github.com/user-attachments/assets/e0081a06-d718-49c8-9d90-98f9913e6ba8" /><br>
+<br><img width="1536" height="1024" alt="Esquema conceitual de canais e espectro em redes IEEE 802.11" src="https://github.com/user-attachments/assets/e0081a06-d718-49c8-9d90-98f9913e6ba8" /><br>
 
 
 Sob a perspectiva arquitetural, uma WLAN é composta por **pontos de acesso (Access Points - APs)** e **estações clientes (stations)**. O AP atua como elemento central de coordenação do acesso ao meio em modo infraestrutura, anunciando periodicamente a rede por meio de **quadros beacon**, que carregam informações essenciais como **SSID**, capacidades suportadas, parâmetros temporais, canal de operação e elementos relacionados à segurança. Esses anúncios permitem que as estações detectem a existência da rede e decidam se iniciarão os processos subsequentes de autenticação e associação. Desse modo, mesmo antes da troca de dados de aplicação, o plano de gerenciamento da WLAN já expõe uma quantidade relevante de informação operacional.
@@ -54,7 +56,7 @@ Do ponto de vista da segurança, essa característica torna a etapa de **reconhe
 
 Neste laboratório, a análise será realizada por meio de **reconhecimento passivo**, abordagem que privilegia a escuta e a interpretação dos quadros 802.11 sem associação indevida, sem injeção de tráfego e sem interferência proposital sobre o ambiente. Tal escolha possui justificativa técnica e ética: em contexto acadêmico, a etapa inicial deve enfatizar compreensão do funcionamento da WLAN, coleta de evidências e construção de diagnóstico, preservando a integridade operacional do ambiente observado. Assim, o laboratório introduz o estudante a uma prática essencial em segurança de redes sem fio: a capacidade de identificar, descrever e interpretar a superfície observável de uma WLAN antes de qualquer atividade de configuração, endurecimento ou resposta a incidentes.  
 
-<br><img width="1672" height="941" alt="ChatGPT Image 5 de jun  de 2026, 19_15_56" src="https://github.com/user-attachments/assets/6adb137a-3b06-440c-8aef-df6963c6b987" />  <br>
+<br><img width="1672" height="941" alt="Reconhecimento passivo do ambiente sem fio e observação de quadros beacon" src="https://github.com/user-attachments/assets/6adb137a-3b06-440c-8aef-df6963c6b987" />  <br>
 
 
 ---
@@ -455,3 +457,12 @@ sudo systemctl restart NetworkManager
 > Ajuste o nome da interface se necessário.
 
 ---
+
+## Continuidade sugerida
+
+O próximo experimento da sequência é o:
+
+**[Lab WiFi 2 - Associação, Autenticação e Captura de Handshake](lab_wifi_2.md)**
+
+Nele, a ênfase avançará da observação passiva do meio para a análise detalhada dos procedimentos de autenticação, associação do cliente e troca de chaves no *4-Way Handshake* WPA2/WPA3.
+
