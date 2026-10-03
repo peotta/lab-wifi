@@ -1,12 +1,13 @@
 # Laboratórios de Redes Wi-Fi: Descoberta, Acesso, Hardening e Troubleshooting
 
-<img width="2752" height="1506" alt="Laboratórios de Redes Wi-Fi - Universidade de Brasília" src="https://github.com/user-attachments/assets/26b6a551-bc67-4d2d-bd23-a221a54aeb0a" />
 
 **Instituição:** Universidade de Brasília (UnB)  
 **Departamento:** Departamento de Engenharia Elétrica (ENE)  
 **Professor responsável:** [Prof. Dr. Laerte Peotta de Melo](https://github.com/peotta)  
 **Repositório Oficial:** [peotta/lab-wifi](https://github.com/peotta/lab-wifi)  
 **Público-alvo:** Estudantes de Engenharia de Redes de Comunicação, Engenharia Elétrica, Cibersegurança e Ciência da Computação
+
+<img width="2752" height="1506" alt="Laboratórios de Redes Wi-Fi - Universidade de Brasília" src="https://github.com/user-attachments/assets/26b6a551-bc67-4d2d-bd23-a221a54aeb0a" />
 
 ---
 
