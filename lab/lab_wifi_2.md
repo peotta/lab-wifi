@@ -36,6 +36,8 @@ Do ponto de vista de segurança e operação, observar esse processo é importan
 
 <img width="1448" height="1086" alt="Fluxo estruturado de associação, autenticação e 4-Way Handshake em redes IEEE 802.11" src="https://github.com/user-attachments/assets/32d7c2e8-321d-4aa9-8294-574e0a127e2e" />
 
+*Imagem gerada com uso de inteligência artificial (OpenAI, ChatGPT).*
+
 
 Neste laboratório, a proposta é **visualizar e interpretar** esse processo em um ambiente controlado, focando a captura e a leitura dos eventos, sem exploração ofensiva e sem uso indevido fora do contexto acadêmico autorizado.
 
@@ -465,6 +467,35 @@ Correlacionar:
 
 ---
 
+## Uso de Inteligência Artificial
+
+Esta atividade segue a Política de Integridade Acadêmica e Uso Responsável da Inteligência Artificial da Faculdade de Tecnologia (FT/UnB), aprovada pelo Conselho da FT em 30/09/2026.
+
+**Regime desta atividade:** uso permitido.
+
+Ferramentas de IA podem apoiar o estudo dos processos de autenticação, associação e 4-Way Handshake e a interpretação dos campos EAPOL. As capturas, a reconexão controlada e a análise no Wireshark devem ser produzidas pelo próprio estudante, exclusivamente no AP do laboratório. Capturas e listagens de redes contêm SSIDs e endereços MAC de terceiros e não devem ser inseridas em plataformas de IA.
+
+**Responsabilidade:** o estudante responde integralmente pelo conteúdo entregue.
+
+**Condutas vedadas:**
+
+- fabricar ou alterar saídas de comandos, capturas, dados ou referências;
+- apresentar como própria uma resposta substancialmente elaborada por IA sem contribuição intelectual compatível;
+- omitir o uso relevante de IA;
+- inserir em plataformas externas dados pessoais, senhas, chaves ou capturas de redes reais.
+
+**Declaração:** obrigatória quando a IA tiver influência relevante sobre o conteúdo, a análise, a interpretação ou as conclusões do relatório. Anexar ao relatório:
+
+| Campo | Preenchimento |
+| :--- | :--- |
+| Ferramenta e versão | |
+| Finalidade | |
+| Etapas do trabalho em que foi empregada | |
+| Natureza da contribuição | |
+| Validação humana realizada | |
+
+---
+
 ## Critérios de avaliação
 
 | Critério | Pontos |
@@ -489,7 +520,8 @@ Cada aluno ou dupla deve entregar:
 - print do Wireshark com filtro `eapol`;
 - tabela de eventos preenchida;
 - resposta das questões analíticas;
-- conclusão curta sobre o comportamento observado.
+- conclusão curta sobre o comportamento observado;
+- declaração de uso de IA generativa, conforme a seção "Uso de Inteligência Artificial" (obrigatória se houve uso relevante de IA).
 
 ---
 

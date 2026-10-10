@@ -33,6 +33,8 @@ Do ponto de vista operacional, o hardening de uma WLAN também inclui decisões 
 
 <img width="1672" height="941" alt="Esquema conceitual de hardening e boas práticas defensivas em WLAN" src="https://github.com/user-attachments/assets/aa18d344-f508-44ce-8e52-7f8d13c32a56" />
 
+*Imagem gerada com uso de inteligência artificial (OpenAI, ChatGPT).*
+
 
 
 Neste laboratório, o estudante atuará sobre uma WLAN de teste previamente disponibilizada pela disciplina, aplicando um conjunto de boas práticas de segurança. O foco não é explorar vulnerabilidades, mas sim **entender como configurar uma WLAN de forma mais segura**, justificando tecnicamente cada decisão adotada.
@@ -481,6 +483,35 @@ Marque os itens concluídos.
 
 ---
 
+## Uso de Inteligência Artificial
+
+Esta atividade segue a Política de Integridade Acadêmica e Uso Responsável da Inteligência Artificial da Faculdade de Tecnologia (FT/UnB), aprovada pelo Conselho da FT em 30/09/2026.
+
+**Regime desta atividade:** uso permitido.
+
+Ferramentas de IA podem apoiar o estudo dos mecanismos de segurança (WPA2, WPA3-SAE, WPS) e das boas práticas de configuração de APs. O levantamento da configuração, as alterações no AP e as evidências de validação devem ser produzidos pelo próprio estudante; senhas e credenciais administrativas do AP não devem ser inseridas em plataformas de IA.
+
+**Responsabilidade:** o estudante responde integralmente pelo conteúdo entregue.
+
+**Condutas vedadas:**
+
+- fabricar ou alterar saídas de comandos, capturas, dados ou referências;
+- apresentar como própria uma resposta substancialmente elaborada por IA sem contribuição intelectual compatível;
+- omitir o uso relevante de IA;
+- inserir em plataformas externas dados pessoais, senhas, chaves ou capturas de redes reais.
+
+**Declaração:** obrigatória quando a IA tiver influência relevante sobre o conteúdo, a análise, a interpretação ou as conclusões do relatório. Anexar ao relatório:
+
+| Campo | Preenchimento |
+| :--- | :--- |
+| Ferramenta e versão | |
+| Finalidade | |
+| Etapas do trabalho em que foi empregada | |
+| Natureza da contribuição | |
+| Validação humana realizada | |
+
+---
+
 ## Critérios de avaliação
 
 | Critério | Pontos |
@@ -505,7 +536,8 @@ Cada aluno ou dupla deve entregar:
 - tabela comparativa antes/depois;
 - evidências da configuração final;
 - respostas das questões analíticas;
-- conclusão curta com justificativa técnica das medidas adotadas.
+- conclusão curta com justificativa técnica das medidas adotadas;
+- declaração de uso de IA generativa, conforme a seção "Uso de Inteligência Artificial" (obrigatória se houve uso relevante de IA).
 
 ---
 

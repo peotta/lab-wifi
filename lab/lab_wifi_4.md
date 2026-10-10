@@ -503,6 +503,35 @@ Indicadores comuns:
 
 ---
 
+## Uso de Inteligência Artificial
+
+Esta atividade segue a Política de Integridade Acadêmica e Uso Responsável da Inteligência Artificial da Faculdade de Tecnologia (FT/UnB), aprovada pelo Conselho da FT em 30/09/2026.
+
+**Regime desta atividade:** uso permitido.
+
+Ferramentas de IA podem apoiar a consulta à sintaxe e ao significado das ferramentas de diagnóstico e a revisão do texto das respostas. As medições de sinal, as capturas, a análise de logs e o diagnóstico de cada cenário devem ser do próprio estudante, a partir das evidências coletadas no ambiente. Capturas e listagens de redes contêm SSIDs e endereços MAC de terceiros e não devem ser inseridas em plataformas de IA.
+
+**Responsabilidade:** o estudante responde integralmente pelo conteúdo entregue.
+
+**Condutas vedadas:**
+
+- fabricar ou alterar saídas de comandos, capturas, dados ou referências;
+- apresentar como própria uma resposta substancialmente elaborada por IA sem contribuição intelectual compatível;
+- omitir o uso relevante de IA;
+- inserir em plataformas externas dados pessoais, senhas, chaves ou capturas de redes reais.
+
+**Declaração:** obrigatória quando a IA tiver influência relevante sobre o conteúdo, a análise, a interpretação ou as conclusões do relatório. Anexar ao relatório:
+
+| Campo | Preenchimento |
+| :--- | :--- |
+| Ferramenta e versão | |
+| Finalidade | |
+| Etapas do trabalho em que foi empregada | |
+| Natureza da contribuição | |
+| Validação humana realizada | |
+
+---
+
 ## Critérios de avaliação
 
 | Critério | Pontos |
@@ -527,7 +556,8 @@ Cada aluno ou dupla deve entregar:
 - evidência da captura ou filtros no Wireshark;
 - tabela de diagnóstico preenchida;
 - respostas das questões propostas;
-- conclusão curta com causa provável e ação corretiva recomendada.
+- conclusão curta com causa provável e ação corretiva recomendada;
+- declaração de uso de IA generativa, conforme a seção "Uso de Inteligência Artificial" (obrigatória se houve uso relevante de IA).
 
 ---
 

@@ -49,6 +49,8 @@ Alguns conceitos são centrais nesse processo. O **SSID (Service Set Identifier)
 
 <br><img width="1536" height="1024" alt="Esquema conceitual de canais e espectro em redes IEEE 802.11" src="https://github.com/user-attachments/assets/e0081a06-d718-49c8-9d90-98f9913e6ba8" /><br>
 
+*Imagem gerada com uso de inteligência artificial (OpenAI, ChatGPT).*
+
 
 Sob a perspectiva arquitetural, uma WLAN é composta por **pontos de acesso (Access Points - APs)** e **estações clientes (stations)**. O AP atua como elemento central de coordenação do acesso ao meio em modo infraestrutura, anunciando periodicamente a rede por meio de **quadros beacon**, que carregam informações essenciais como **SSID**, capacidades suportadas, parâmetros temporais, canal de operação e elementos relacionados à segurança. Esses anúncios permitem que as estações detectem a existência da rede e decidam se iniciarão os processos subsequentes de autenticação e associação. Desse modo, mesmo antes da troca de dados de aplicação, o plano de gerenciamento da WLAN já expõe uma quantidade relevante de informação operacional.
 
@@ -57,6 +59,8 @@ Do ponto de vista da segurança, essa característica torna a etapa de **reconhe
 Neste laboratório, a análise será realizada por meio de **reconhecimento passivo**, abordagem que privilegia a escuta e a interpretação dos quadros 802.11 sem associação indevida, sem injeção de tráfego e sem interferência proposital sobre o ambiente. Tal escolha possui justificativa técnica e ética: em contexto acadêmico, a etapa inicial deve enfatizar compreensão do funcionamento da WLAN, coleta de evidências e construção de diagnóstico, preservando a integridade operacional do ambiente observado. Assim, o laboratório introduz o estudante a uma prática essencial em segurança de redes sem fio: a capacidade de identificar, descrever e interpretar a superfície observável de uma WLAN antes de qualquer atividade de configuração, endurecimento ou resposta a incidentes.  
 
 <br><img width="1672" height="941" alt="Reconhecimento passivo do ambiente sem fio e observação de quadros beacon" src="https://github.com/user-attachments/assets/6adb137a-3b06-440c-8aef-df6963c6b987" />  <br>
+
+*Imagem gerada com uso de inteligência artificial (OpenAI, ChatGPT).*
 
 
 ---
@@ -407,6 +411,35 @@ Preencha a tabela abaixo com pelo menos 5 redes identificadas, quando disponíve
 
 ---
 
+## Uso de Inteligência Artificial
+
+Esta atividade segue a Política de Integridade Acadêmica e Uso Responsável da Inteligência Artificial da Faculdade de Tecnologia (FT/UnB), aprovada pelo Conselho da FT em 30/09/2026.
+
+**Regime desta atividade:** uso permitido.
+
+Ferramentas de IA podem apoiar o estudo dos padrões IEEE 802.11, da canalização e dos quadros de gerenciamento e a interpretação de mensagens de erro do `iw` e do `airodump-ng`. A identificação da interface, as listagens, as capturas e a análise no Wireshark devem ser produzidas pelo próprio estudante. Capturas e listagens de redes contêm SSIDs e endereços MAC de terceiros e não devem ser inseridas em plataformas de IA.
+
+**Responsabilidade:** o estudante responde integralmente pelo conteúdo entregue.
+
+**Condutas vedadas:**
+
+- fabricar ou alterar saídas de comandos, capturas, dados ou referências;
+- apresentar como própria uma resposta substancialmente elaborada por IA sem contribuição intelectual compatível;
+- omitir o uso relevante de IA;
+- inserir em plataformas externas dados pessoais, senhas, chaves ou capturas de redes reais.
+
+**Declaração:** obrigatória quando a IA tiver influência relevante sobre o conteúdo, a análise, a interpretação ou as conclusões do relatório. Anexar ao relatório:
+
+| Campo | Preenchimento |
+| :--- | :--- |
+| Ferramenta e versão | |
+| Finalidade | |
+| Etapas do trabalho em que foi empregada | |
+| Natureza da contribuição | |
+| Validação humana realizada | |
+
+---
+
 ## Critérios de avaliação
 
 | Critério | Pontos |
@@ -433,7 +466,8 @@ Cada aluno ou dupla deve entregar:
 - tabela preenchida com as redes observadas;
 - evidência de ao menos um beacon no Wireshark;
 - resposta das questões propostas;
-- conclusão curta com diagnóstico do ambiente.
+- conclusão curta com diagnóstico do ambiente;
+- declaração de uso de IA generativa, conforme a seção "Uso de Inteligência Artificial" (obrigatória se houve uso relevante de IA).
 
 ---
 
