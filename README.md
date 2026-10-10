@@ -176,3 +176,9 @@ Para a realização autônoma das práticas, recomenda-se:
 7. **PERAHIA, Eldad; STACEY, Robert.** *Next Generation Wireless LANs: 802.11n and 802.11ac*. 2. ed. Cambridge: Cambridge University Press, 2013.
 8. **KUROSE, James F.; ROSS, Keith W.** *Redes de Computadores e a Internet: Uma Abordagem Top-Down*. 8. ed. São Paulo: Pearson, 2021.
 9. **WIRESHARK FOUNDATION:** *Wireshark User's Guide: Display Filter Reference for IEEE 802.11 Wireless LAN*. Wireshark Foundation, 2024.
+
+---
+
+## Uso de Inteligência Artificial
+
+Em conformidade com a Política de Uso Responsável da IA da FT/UnB, declara-se que este material foi elaborado com apoio de ferramentas de inteligência artificial generativa (Claude, ChatGPT e Gemini), sob revisão e responsabilidade do professor.
